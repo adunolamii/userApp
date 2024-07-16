@@ -13,11 +13,13 @@ mongoose.connect(process.env.MONGO_URI)
     console.log(("data connected"))
 })
 .catch((error)=>{
-    console.log(("error"))
+    console.log(("error")) 
 })
 
-app.listen(6001, () =>{
-    console.log("hey! start listening now")
+
+const PORT = process.env.PORT || 6001;
+app.listen(PORT, ()=>{
+    console.log(`hey! listen on the port ${PORT}`);
 })
 
 
