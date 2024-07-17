@@ -11,7 +11,7 @@ const About = () => {
   const [about, setAbout] = useState([]);
 
   useEffect(() => {
-  
+
     const aboutAll = async () => {
       try {
         const res = await axios.get(`${URI}/adAbouts`);
